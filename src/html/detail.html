@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/jquery.xZoom.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="../js/jquery.xZoom.js"></script>
+</head>
+
+<body>
+    <div class="header_top_line">
+        <div class="line_div">
+            <div class="line_left fl">
+                <span>七彩蛋糕-蛋糕配送专家&nbsp;&nbsp;&nbsp;</span>
+                <a class="fontRed" href="./login.html">登录</a>
+                <span>&nbsp;|&nbsp;</span>
+                <a class="fontRed" href="./register.html">注册</a>
+            </div>
+            <div class="line_right fr">
+                <ul class="fr">
+                    <li class="myUsers">
+                        <a href="">我的账户</a>
+                        <div class="myUsersUL"></div>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="" class="fontRed">补交货款</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="">订单查询</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="">帮助中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ntop">
+            <a href=""></a>
+        </div>
+    </div>
+    <div>
+        <div class="header_logo">
+            <div class="left_logo fl">
+                <a href="./index.html">
+                    <img src="../img/logo.gif" alt="">
+                </a>
+            </div>
+            <div class="center_logo fl">
+                <form action="">
+                    <div class="searchDiv clearfix">
+                        <div class="searLeft fl">
+                            <input type="text" class="keyinput">
+                        </div>
+                        <div class="searRight fl">
+                            <input type="submit" class="keysub" value="搜索">
+                        </div>
+                        <div class="hotkey fl">
+                            <ul>
+                                <li>
+                                    <a href="">生日蛋糕</a>
+                                </li>
+                                <li>
+                                    <a href="">巧克力蛋糕</a>
+                                </li>
+                                <li>
+                                    <a class="fontRed" href="">快到碗里来</a>
+                                </li>
+                                <li>
+                                    <a href="">生日鲜花</a>
+                                </li>
+                                <li>
+                                    <a href="">商业用花</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right_logo fr">
+                <div class="cartbox">
+                    <i class="iconfont icon-gouwuche fontRed"></i>
+                    <a href="">我的购物车</a>
+                    <i class="c" id="cart_ts">0</i>
+                    <i class="r">&gt;</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="index_menu">
+        <div class="container clearfix">
+            <div id="allmenu">
+                <a href="javascript:;">
+                    全部商品分类
+                    <span id="ci-right"></span>
+                </a>
+            </div>
+            <div class="menuDiv">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">生日蛋糕</a>
+                    </li>
+                    <li>
+                        <a href="">儿童蛋糕</a>
+                    </li>
+                    <li>
+                        <a href="">祝寿蛋糕</a>
+                    </li>
+                    <li>
+                        <a href="">水果蛋糕</a>
+                    </li>
+                    <li>
+                        <a href="">多层蛋糕</a>
+                    </li>
+                    <li>
+                        <a href="">鲜花+蛋糕</a>
+                    </li>
+                    <li>
+                        <a href="">鲜花</a>
+                    </li>
+                    <li>
+                        <a href="">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <li class="menu_right">
+                        <span class="iconfont icon-dianhua"></span>400-658-1177</li>
+                </ul>
+            </div>
+            <div class="left_menu" style="display: none;">
+                <ul id="left_menu_ul">
+                    <li id="m1">
+                        <ol>
+                            <a href="">蛋糕、生日蛋糕、卡通蛋糕</a>
+                            <i>></i>
+                        </ol>
+                        <div class="menu_cengDiv">
+                            <div class="l">
+                                <div class="classConDiv">
+                                    <div class="subitems">
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r">
+                                <a href="">
+                                    <img src="../img/ceng_dg.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li id="m1">
+                        <ol>
+                            <a href="">蛋糕、生日蛋糕、卡通蛋糕</a>
+                            <i>></i>
+                        </ol>
+                        <div class="menu_cengDiv">
+                            <div class="l">
+                                <div class="classConDiv">
+                                    <div class="subitems">
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r"></div>
+                        </div>
+                    </li>
+                    <li id="m1">
+                        <ol>
+                            <a href="">蛋糕、生日蛋糕、卡通蛋糕</a>
+                            <i>></i>
+                        </ol>
+                        <div class="menu_cengDiv">
+                            <div class="l">
+                                <div class="classConDiv">
+                                    <div class="subitems">
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r"></div>
+                        </div>
+                    </li>
+                    <li id="m1">
+                        <ol>
+                            <a href="">蛋糕、生日蛋糕、卡通蛋糕</a>
+                            <i>></i>
+                        </ol>
+                        <div class="menu_cengDiv">
+                            <div class="l">
+                                <div class="classConDiv">
+                                    <div class="subitems">
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r"></div>
+                        </div>
+                    </li>
+                    <li id="m1">
+                        <ol>
+                            <a href="">蛋糕、生日蛋糕、卡通蛋糕</a>
+                            <i>></i>
+                        </ol>
+                        <div class="menu_cengDiv">
+                            <div class="l">
+                                <div class="classConDiv">
+                                    <div class="subitems">
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="">按用途</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="">生日蛋糕</a>
+                                                <a href="">祝寿蛋糕</a>
+                                                <a href="">庆典蛋糕</a>
+                                                <a href="">祝福蛋糕</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r"></div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间内容 -->
+    <div class="promenu clearfix">
+        <div class="left">
+            <a href="">七彩蛋糕首页</a> >>> 我想要的幸福
+        </div>
+        <div class="right">
+            <ul class="clearfix">
+                <a href="">
+                    <li class="qq">QQ: 139010678</li>
+                </a>
+                <a href="">
+                    <li class="wx">微信咨询</li>
+                </a>
+                <a href="">
+                    <li class="zixun">我在线，点我咨询</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="proDiv clearfix">
+        <div class="proTopDiv clearfix">
+            <div class="leftDiv">
+                <div class="proviewbox">
+                    <div class="probigshow">
+                        <a class="a_probigshow" id="daimg" href="">
+                            <div class="xzoom-t">
+                                <img src="../img/711673175228.jpg" width="420" height="420" class="js_goods" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="div_prothumb">
+                        <div class="thumbporbox">
+                            <ul class="ul_prothumb">
+                                <li class="now">
+                                    <a href="">
+                                        <img src="../img/711673175228.jpg" width="60" height="60" alt="">
+                                    </a>
+                                </li>
+                                <li class=>
+                                    <a href="">
+                                        <img src="../img/711673175228.jpg" width="60" height="60" alt="">
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a href="">
+                                        <img src="../img/711673175228.jpg" width="60" height="60" alt="">
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a href="">
+                                        <img src="../img/711673175228.jpg" width="60" height="60" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="addtocart" name="addtocart" method="post" action="/Cart/addcart">
+                <!-- pro_right_info S -->
+                <div class="rightDiv">
+                    <div class="rightDivCon">
+                        <!-- itemDiv s -->
+                        <div class="itemDiv" style="border:0">
+                            <div>
+                                <div style="width:50%; float:left">
+                                    <h1 class="pro-name">我想要的幸福</h1>
+                                </div>
+                                <div style="width:50%; float:left">
+                                    <p class="pro-proid">产品编号：711673</p>
+                                </div>
+                            </div>
+                            <div class="pro-slogan"> 主材：圆形欧式水果蛋糕，各色时令水果方格式艺术装饰，纯手工巧克力片围边。
+                            </div>
+                        </div>
+                        <!-- itemDiv e -->
+                        <!-- itemDiv s -->
+                        <div class="itemDiv hotitemDiv" style="border:0;">
+                            <div class="itemleft">
+                                <div style="margin-top:10px">
+                                    <div class="l">
+                                        <span>市场价</span>
+                                    </div>
+                                    <div class="r">¥
+                                        <span class="oprice">
+                                            <s id="oprice_txt">226</s>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="l">
+                                        <span>七彩价</span>
+                                    </div>
+                                    <div class="r" style="color:#C40000; font-size:14px">¥
+                                        <span id="price_txt">188</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itemcenter">
+                                <span id="goiphoneapp">去手机购买
+                                    <div id="ewmappdiv" style="display: none;">
+                                        
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="itemright"> 商品评分：
+                                <span id="pro-pj-xing"></span>
+                                <span class="plcount">（
+                                    <a href="#pl">共 17240 条评论</a>）</span>
+                            </div>
+                        </div>
+                        <!--新价格提醒 E-->
+
+                        <div class="itemDiv" style="border-bottom:0px">
+                            <div id="fujiaDiv">
+                                <div class="pro-item clearfix">
+                                    <label style="float:left">选择尺寸：</label>
+                                    <dd>
+                                        <ol id="fujiaItem" class="fujiali">
+                                            <li title="1" class="selected">
+                                                <div class="sku">
+                                                    <a title="八英寸(适合2-3人食用)">八英寸(20CM,2-3人食用)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li title="1.35">
+                                                <div class="sku">
+                                                    <a title="十英寸(适合4-6人食用)">十英寸(25CM,4-6人食用)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li title="1.6">
+                                                <div class="sku">
+                                                    <a title="十二英寸(适合6-9人食用)">十二英寸(30CM,6-9人食用)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li title="2.03">
+                                                <div class="sku">
+                                                    <a title="十四英寸(适合9-12人食用)">十四英寸(35CM,9-12人食用)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li title="2.56">
+                                                <div class="sku">
+                                                    <a title="十六英寸(适合12-15人食用)">十六英寸(40CM,12-15人食用)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li title="3.09">
+                                                <div class="sku">
+                                                    <a title="十八英寸(适合15-18人食用)">十八英寸(45CM,15-18人食用)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li title="3.68">
+                                                <div class="sku">
+                                                    <a title="二十英寸(中型聚会)">二十英寸(50CM,中型聚会)</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                        <div class="clear"></div>
+                                    </dd>
+                                </div>
+                                <div style="border-bottom:1px #eee solid; clear:both; margin:10px 0px"></div>
+                                <div class="pro-item clearfix">
+                                    <label style="float:left">选择餐具：</label>
+                                    <dd>
+                                        <ol id="fujiacanju" class="fujiali">
+                                            <li class="selected">
+                                                <div class="sku cj">
+                                                    <a title="5人份餐具">5人份餐具</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sku cj">
+                                                    <a title="10人份餐具">10人份餐具</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sku cj">
+                                                    <a title="15人份餐具">15人份餐具</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sku cj">
+                                                    <a title="20人份餐具">20人份餐具</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sku cj">
+                                                    <a title="25人份餐具">25人份餐具</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sku cj">
+                                                    <a title="30人份餐具">30人份餐具</a>
+                                                    <s></s>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                        <div class="clear"></div>
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- itemDiv e -->
+                        <!-- itemDiv s -->
+                        <div class="itemDiv" style="border-bottom:0px">
+                            <div class="pro-item" id="fujiatext">
+                                <label>您已选择：
+                                    <span class="red">八英寸(适合2-3人食用)5人份餐具</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <span style="color:#888; font-size:14px">说明：受季节和地域影响，蛋糕装饰原料略有差异，产品及包装请以实物为准</span>
+                        <!--新价格提醒 E-->
+                        <div class="itemDiv cartLine" style="border-bottom:0px;">
+                            <div class="pro-item clearfix">
+                                <dd style="line-height:22px; float:left; width:auto; margin-right:50px">
+                                    <span class="stock-area clearfix">
+                                        <div style="float:left">
+                                            <input id="quantity" name="quantity" type="text" class="vam text" value="1" autocomplete="off">
+                                        </div>
+                                        <div style="float:left">
+                                            <a href="javascript:;" class="icon-plus-2 vam" title="加" herf="javascript:;">
+                                                <span>+</span>
+                                            </a>
+                                            <a href="javascript:;" class="icon-minus-2 vam" title="减" herf="javascript:;">
+                                                <span>-</span>
+                                            </a>
+                                        </div>
+                                    </span>
+                                </dd>
+                                <a href="javascript:;" onclick="javascript:$('#goorder').val('goorder'); addtocart.submit();"
+                                    class="gocart">立即购买</a>
+                                <a href="./cart.html" class="addcarta">加入购物车</a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <!-- itemDiv e -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="register-footer">
+        <div class="footerline">
+            <ul class="clearfix">
+                <li>
+                    <a href="">
+                        <span></span>全国3000+地区免费送</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>1-3小时急速送达</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>当天制作，新鲜上门</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>全年无休，个性定制</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>支付宝，微信线上无忧支付</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerMenu clearfix">
+            <dl class="col-links">
+                <dt>购物指南</dt>
+                <dd>
+                    <a href="">购物流程</a>
+                </dd>
+                <dd>
+                    <a href="">会员介绍</a>
+                </dd>
+                <dd>
+                    <a href="">联系客服</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>配送方式</dt>
+                <dd>
+                    <a href="">送货上门</a>
+                </dd>
+                <dd>
+                    <a href="">店门自取</a>
+                </dd>
+                <dd>
+                    <a href="">配送范围</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="">在线支付</a>
+                </dd>
+                <dd>
+                    <a href="">货到付款</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>服务支持</dt>
+                <dd>
+                    <a href="">售后服务</a>
+                </dd>
+                <dd>
+                    <a href="">退款说明</a>
+                </dd>
+                <dd>
+                    <a href="">取消订单</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>关注我们</dt>
+                <dd>
+                    <a href="">微信公众好</a>
+                </dd>
+                <dd>
+                    <a href="">七彩蛋糕APP</a>
+                </dd>
+                <dd>
+                    <a href="">情人节特别提示</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>联系我们</dt>
+                <dd>
+                    <a href="">联系我们</a>
+                </dd>
+            </dl>
+            <div class="col-contact">
+                <p class="phone">400-658-1177</p>
+                <p>周一至周日 24小时服务</p>
+                <a href="">24小时在线客服</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-info clearfix">
+        <div class="fl ir">
+            <img src="../img/logo.gif" alt="">
+        </div>
+        <div class="info-text fl">
+            <p>联系我们|关于我们|招商加盟|问题反馈|鲁ICP备11002183号</p>
+            <p>Copyright©1997-2016 dangao.com All rights reserved. 青州七彩时尚电子商务有限公司-七彩蛋糕-版权所有,禁止非法复制</p>
+        </div>
+        <div class="info-links fr">
+            <img src="../img/f-logo-1.png" alt="">&nbsp;
+            <img src="../img/f-logo-2.png" alt="">&nbsp;
+            <img src="../img/f-logo-3.png" alt="">&nbsp;
+            <img src="../img/f-logo-4.png" alt="">&nbsp;
+        </div>
+    </div>
+</body>
+
+</html>

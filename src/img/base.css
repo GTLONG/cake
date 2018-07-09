@@ -1,0 +1,44 @@
+/* CSS Document */
+/** public **/
+body,img,ul,li,h1,h2,h3,h4{ padding:0px; margin:0px;font-family:"microsoft yahei";}
+em{ font-style:normal}
+a{ text-decoration:none; }
+img{ border:0px;}
+li{ list-style-type:none}
+.fl{ float:left}
+.fr{ float:right}
+.fw600{ font-weight:600}
+.fw500{ font-weight:500}
+.mt10{ margin-top:10px}
+.mb10{ margin-bottom:10px}
+.ml10{ margin-left:10px}
+.mr10{ margin-right:10px}
+.mt0{ margin-top:0px}
+.mb0{ margin-bottom:0px}
+.ml0{ margin-left:0px}
+.mr0{ margin-right:0px}
+.h10{ height:10px;}
+.h30{ height:30px;}
+
+.bm0{ border-bottom:0px;}
+.bt0{ border-top:0px;}
+
+.w60{ width:60px;}
+.w80{ width:80px;}
+.w100{ width:100px;}
+.w120{ width:120px;}
+.w150{ width:150px;}
+.w180{ width:180px;}
+.w200{ width:200px;}
+.w300{ width:300px;}
+.w400{ width:400px;}
+.w500{ width:500px;}
+.talignc{ text-align:center}
+.talignl{ text-align:left}
+.talignr{ text-align:right}
+.clear{ clear:both}
+
+.disno{ display:none}
+.disok{ display:block}
+
+input {outline:none;}

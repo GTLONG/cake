@@ -1,0 +1,130 @@
+.mbx{ width:1200px; margin:0px auto; line-height:25px;margin-top:10px; font-size:14px; color:#666; }
+.mbx a{ color:#666}
+.mbx a:hover{ color:#F00; text-decoration:underline}
+.listTSDiv{
+	width:1200px;
+	height:33px;
+	margin:0px auto;
+	margin-top:10px;
+	line-height:33px;
+	font-size:13px;
+	color:#333
+
+}
+.listTSDiv a{
+	 border-radius: 35px;
+	  color: #FFF;
+	  text-decoration: none;
+	  padding: 3px 10px;
+	BACKGROUND-COLOR: #CC0033;
+}
+.typeborder{ width:1198px; border:1px #DFDFDF solid; margin:0px auto; margin-top:10px}
+
+#LeftNav {
+	float: left;
+	width: 100%;
+	line-height: 34px;
+}
+#LeftNav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#LeftNav ul li {
+	border-bottom:1px #DFDFDF solid;
+	float: left;
+	width: 100%;
+	line-height:50px;
+	height:50px;
+	font-size:15px;
+}
+#LeftNav ul li .l{ display:block; float:left; background-color:#F3F3F3; width:8%; color:#565656; text-align:center;}
+#LeftNav ul li .r{ display:block; float:left; width:92%;text-indent: 10px;}
+
+#LeftNav A {
+	padding:3px 9px;
+	margin:2px;
+	TEXT-DECORATION: none;
+	color:#666;
+	font-size:14px;
+}
+#LeftNav A:hover {
+	COLOR: #FFF;
+	background-color: #CC0033;
+	border-radius: 35px;
+	padding:3px 9px;
+}
+#LeftNav A:active {
+	COLOR: #666
+}
+#LeftNav a.on{
+	padding:3px 9px;
+	MARGIN: 2px;
+	COLOR: #fff;
+	BACKGROUND-COLOR: #CC0033;
+	border-radius: 35px;
+}
+#LeftNav a.on:active{
+	padding:3px;
+	MARGIN: 2px;
+	COLOR: #fff;
+	BACKGROUND-COLOR: #CC0033;
+}
+.sub-r-1{
+	font-size:14px;
+	color:#333;
+	height:50px;
+	line-height:50px;
+	padding-left:10px
+	
+}
+.ceng_ConDiv{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ceng_ConDiv ul{
+    border-top: 1px solid #dfdfdf;
+}
+.ceng_ConDiv ul li{
+    width: 25%;
+    height: 390px;
+    float: left;
+    background: #fff;
+}
+.ceng_ConDiv ul li .kuang{
+    border-left: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    height: 389px;
+}
+.ceng_ConDiv ul li .r{
+    border-right: 1px solid #dfdfdf;
+}
+.ceng_ConDiv ul li .kuang .colork{
+    border: 4px solid #fff;
+    height: 381px;
+}
+.ceng_ConDiv ul li:hover .colork{
+    border: 4px solid #f4d0d0;
+}
+.ceng_ConDiv ul li .pro{
+    text-align: center;
+}
+.ceng_ConDiv ul li .pro .proname{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    width: 90%;
+    margin: 0 auto;
+}
+.red{
+    color: #f00;
+}
+.ceng_ConDiv ul li .pro .proprice{
+    font-size: 25px;
+    color: #f00;
+    font-weight: 500;
+    line-height: 40px;
+}

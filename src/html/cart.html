@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <div class="header_top_line">
+        <div class="line_div">
+            <div class="line_left fl">
+                <span>七彩蛋糕-蛋糕配送专家&nbsp;&nbsp;&nbsp;</span>
+                <a class="fontRed" href="./login.html">登录</a>
+                <span>&nbsp;|&nbsp;</span>
+                <a class="fontRed" href="./register.html">注册</a>
+            </div>
+            <div class="line_right fr">
+                <ul class="fr">
+                    <li class="myUsers">
+                        <a href="">我的账户</a>
+                        <div class="myUsersUL"></div>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="" class="fontRed">补交货款</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="">配送查询</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="">订单查询</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="">帮助中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ntop">
+            <a href=""></a>
+        </div>
+    </div>
+    <div class="top_header">
+        <div class="header_logo">
+            <div class="left_logo fl">
+                <a href="./index.html">
+                    <img src="../img/logo.gif" alt="">
+                </a>
+            </div>
+            <div class="right_log">
+                <img src="../img/cart_next1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间内容 -->
+    <form action="/Cart/update" method="post" name="form1" id="form1" style="margin:0px">
+        <div id="J_cartBox">
+            <div class="cart-goods-list">
+                <div class="list-head clearfix">
+                    <div class="col col-img">商品图片</div>
+                    <div class="col col-name">商品名称</div>
+                    <div class="col col-price">单价</div>
+                    <div class="col col-num">数量</div>
+                    <div class="col col-total">小计</div>
+                    <div class="col col-action">操作</div>
+                </div>
+                <div class="list-body" id="J_cartListBody">
+                    <!-- Item S -->
+                    <input name="itemid[]" type="hidden" id="itemid[]" value="711023八英寸(适合2-3人食用)@5人份餐具">
+                    <div class="item-box">
+                        <div class="item-table J_cartGoods">
+                            <div class="item-row clearfix">
+                                <div class="col col-img">
+                                    <a href="/cake/711023.html" target="_blank">
+                                        <img src="https://www.dangao.com/proimgs/711023175228.jpg" height="60" width="60">
+                                    </a>
+                                </div>
+                                <div class="col col-name">
+                                    <div class="tags"></div>
+                                    <h3 class="name">
+                                        <a href="/cake/711023.html" target="_blank">生日快乐</a>
+                                    </h3>
+                                    <p class="desc">
+                                        <span>附加：</span>八英寸(适合2-3人食用)
+                                        <br>5人份餐具
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="col col-price">198元 </div>
+                                <div class="col col-num">
+                                    <div class="change-goods-num clearfix J_changeGoodsNum">
+                                        <a href="javascript:void(0)" class="J_minus" onclick="jiancart(0);">
+                                            <i class="iconfont">-</i>
+                                        </a>
+                                        <input tyep="text" name="qty[]" id="qty0" value="1" data-num="1" data-buylimit="50"
+                                            autocomplete="off" class="goods-num J_goodsNum">
+                                        <a href="javascript:void(0)" class="J_plus" onclick="jiacart(0);">
+                                            <i class="iconfont">+</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col col-total">198元
+                                    <p class="pre-info"></p>
+                                </div>
+                                <div class="col col-action">
+                                    <a href="/Cart/delcart/prono/711023八英寸(适合2-3人食用)@5人份餐具" onclick="javascript:return confirm('确定要删除吗？');"
+                                        title="删除" class="del J_delGoods">
+                                        <i class="iconfont">×</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item E -->
+                </div>
+            </div>
+            <!-- 加价购 -->
+            <div class="cart-bar clearfix" id="J_cartBar">
+                <div class="section-left">
+                    <a href="/" class="back-shopping J_goShoping">继续购物</a>
+                    <span class="cart-total">共
+                        <i id="J_cartTotalNum">1</i>件商品</span>
+                </div>
+                <span class="total-price"> 合计：
+                    <em id="J_cartTotalPrice">198</em>元 </span>
+                <a href="/Orders/add" class="btn btn-a btn-primary" id="J_goCheckout">去结算</a>
+            </div>
+        </div>
+        <!-- Cart E -->
+        <input name="A" type="hidden" id="A" value="Update">
+        <input name="itemcount" type="hidden" id="itemcount" value="1">
+    </form>
+
+
+    <!-- 底部 -->
+    <div class="register-footer">
+        <div class="footerline">
+            <ul class="clearfix">
+                <li>
+                    <a href="">
+                        <span></span>全国3000+地区免费送</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>1-3小时急速送达</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>当天制作，新鲜上门</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>全年无休，个性定制</a>
+                </li>
+                <li>
+                    <a href="">
+                        <span></span>支付宝，微信线上无忧支付</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerMenu clearfix">
+            <dl class="col-links">
+                <dt>购物指南</dt>
+                <dd>
+                    <a href="">购物流程</a>
+                </dd>
+                <dd>
+                    <a href="">会员介绍</a>
+                </dd>
+                <dd>
+                    <a href="">联系客服</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>配送方式</dt>
+                <dd>
+                    <a href="">送货上门</a>
+                </dd>
+                <dd>
+                    <a href="">店门自取</a>
+                </dd>
+                <dd>
+                    <a href="">配送范围</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="">在线支付</a>
+                </dd>
+                <dd>
+                    <a href="">货到付款</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>服务支持</dt>
+                <dd>
+                    <a href="">售后服务</a>
+                </dd>
+                <dd>
+                    <a href="">退款说明</a>
+                </dd>
+                <dd>
+                    <a href="">取消订单</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>关注我们</dt>
+                <dd>
+                    <a href="">微信公众好</a>
+                </dd>
+                <dd>
+                    <a href="">七彩蛋糕APP</a>
+                </dd>
+                <dd>
+                    <a href="">情人节特别提示</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>联系我们</dt>
+                <dd>
+                    <a href="">联系我们</a>
+                </dd>
+            </dl>
+            <div class="col-contact">
+                <p class="phone">400-658-1177</p>
+                <p>周一至周日 24小时服务</p>
+                <a href="">24小时在线客服</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-info clearfix">
+        <div class="fl ir">
+            <img src="../img/logo.gif" alt="">
+        </div>
+        <div class="info-text fl">
+            <p>联系我们|关于我们|招商加盟|问题反馈|鲁ICP备11002183号</p>
+            <p>Copyright©1997-2016 dangao.com All rights reserved. 青州七彩时尚电子商务有限公司-七彩蛋糕-版权所有,禁止非法复制</p>
+        </div>
+        <div class="info-links fr">
+            <img src="../img/f-logo-1.png" alt="">&nbsp;
+            <img src="../img/f-logo-2.png" alt="">&nbsp;
+            <img src="../img/f-logo-3.png" alt="">&nbsp;
+            <img src="../img/f-logo-4.png" alt="">&nbsp;
+        </div>
+    </div>
+</body>
+
+</html>

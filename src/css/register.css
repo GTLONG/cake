@@ -1,0 +1,97 @@
+.register-header{
+    border-bottom: 3px solid #eee;
+}
+.register-header img{
+    padding: 16px 40px;
+}
+.register-header .register{
+    height: 100px;
+    line-height: 120px;   
+}
+.login{
+    height: 100px;
+    line-height: 150px;
+    padding-right: 40px;
+}
+.login a{
+    text-decoration:underline;
+    display: inline-block;
+}
+
+.userDiv{
+    width: 860px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.main-left{
+    width: 400px;
+    padding-right: 100px;
+    border-right: 1px solid #ddd;
+}
+.itemUl{
+    width: 400px;
+}
+.itemUl li{
+    border: 1px solid #ddd;
+    height: 46px;
+    line-height: 46px;
+    margin-bottom: 30px;
+    
+}
+.itemUl li label{
+    display:inline-block;
+    padding-left:10px;
+    font-size: 14px;
+    width: 100px;
+}
+.dx_btn{
+    padding: 10px 15px;
+    background: #ddd;
+    height: 36px;
+    margin-top: -4px;
+    cursor: pointer;
+}
+.li_phone label{
+    letter-spacing: 1em;
+}
+
+.li_username,.li_psd{
+    letter-spacing: 0.25em;
+}
+#span_yzm{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.xieYi{
+    font-size: 14px;
+    color: #666;
+}
+.btn-register{
+    margin-top: 40px;
+    width: 400px;
+}
+.btn-register button{
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    background: #f25454;
+    border: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    cursor: pointer;
+}
+.main-right{
+    margin-left: 80px;
+}
+.main-right p{
+    text-align: center;
+    font-size: 14px;
+}
+.weixin_img{
+    margin-top: 20px;
+}
+
+
